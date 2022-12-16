@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turing IA</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.0/lottie.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- CONTENEDOR HEADER-->
+    <header>
+        <!-- LOGO / TEXTO TURING IA-->
+        <div class="contenedor_header">
+            <div class="titulo_principal">
+                    <a href="#">TURING-IA</a>
+            </div>
+            <!-- MENU -->
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Tableau</a></li>
+                        <li><a href="#">Portal</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <i class="fa-solid fa-bars" id="icon_menu"></i>
+        </div>
+    </header>
+
+    <!-- MAIN / CONTENIDO-->
+    <main>
+        <div class="contenido">
+
+            <div class="informacion_texto_contenido">
+
+                <h1>Bienvenido</h1>
+                <p>Hacemos los datos fáciles de usar</p>
+                <!-- BOTON CONTACTANOS-->
+                <div class="boton_contenido">
+                    <input type="button" class="btn_contactanos" value="Contactanos">
+                </div>
+
+            </div>
+
+            <!-- ANIMACION -->
+            <div class="col-lg-8" id="anim"></div>
+                <script>
+                    var anim = bodymovin.loadAnimation({
+                        container: document.getElementById('anim'),
+                        path: 'media/animacion-ia.json',
+                        render: 'svg',
+                        loop: true,
+                        autoplay: true,
+                        name: 'demo animation'
+                    });
+                </script>
+        </div>
+
+
+        <!-- INFORMACION ACERCA DE LO QUE REALIZAMOS-->
+        <div class="contenido_banner">
+            <div class="banner">
+
+                <div class="banner_nosotros-icono">
+                    <img src="/media/nosotros.png" id="icon_nosotros" alt="">
+                </div>
+
+                <div class="banner_texto_realizamos">
+                    <h3>QUE REALIZAMOS</h3>
+                    <p>Contribuimos con su empresa para mejorar la toma de decisiones a través de sus datos.</p>
+                    <div class="masinfo">
+                        <a href="#">Mas información</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- TECNOLOGIAS QUE UTILIZAMOS-->
+        <div class="contenido_seccion1">
+            <h3>TECNOLOGIAS QUE UTILIZAMOS</h3>
+        </div>
+
+        <div class="contenedor_cards_tecnologias">
+            <div class="card_3">
+                <div class="cover_card">
+                    <img src="media/tecnologia_tableau.png" alt="">
+                </div>
+            </div>
+
+            <div class="card_3">
+                <div class="cover_card">
+                    <img src="media/tecnologia_salesforce.png" alt="">
+                </div>
+            </div>
+
+            <div class="card_3">
+                <div class="cover_card">
+                    <img src="media/tecnologia_pmi.png" alt="">
+                </div>
+            </div>
+
+            <div class="card_3">
+                <div class="cover_card">
+                    <img src="media/tecnologia_scrum.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- INFORMACION ACERCA DE LO QUE TE OFREEMOS PRIMERA SECCION-->
+        <div class="contenido_seccion2">
+            <h3>LO QUE TE OFRECEMOS</h3>
+        </div>
+
+        <div class="contenedor_tarjetas">
+
+            <!-- PRIMER TARJETA BA-->
+            <div class="card">
+                <div class="cabecera">
+                    <img src="media/business-analyst.png" alt="">
+                    <div class="img_back"></div>
+                </div>
+                <div class="descripcion">
+                    <h2>IMPLEMENTACION DE PROYECTOS (BUSINESS ANALYST)</h2>
+                    <p>Nuestra metodología de servicios se encuentra orientada en los 
+                    estándares del Project Management Institute (PMI) ® e International 
+                    Project Management Association (IPMA)...</p>
+                    <input type="button" value="Ver mas">
+                </div>
+            </div>
+
+            <!-- SEGUNDA TARJETA DF -->
+            <div class="card">
+                <div class="cabecera">
+                    <img src="media/desarrollo-de-aplicaciones.png" alt="">
+                    <div class="img_back"></div>
+                </div>
+                <div class="descripcion">
+                    <h2>DESARROLLO DE APLICACIONES</h2>
+                    <p>En un mundo moderno, con la cantidad de problemas y su complejidad 
+                    cada vez es mayor, el desarrollo de aplicaciones, una herramienta para 
+                    obtener soluciones precisas, dándole tareas repetitivas a la computadora 
+                    y logrando...</p>
+                    <input type="button" value="Ver mas">
+                </div>
+            </div>
+
+
+            <!-- TERCERA TARJETA WS -->
+            <div class="card">
+                <div class="cabecera">
+                    <img src="media/workshop.png" alt="">
+                    <div class="img_back"></div>
+                </div>
+                <div class="descripcion">
+                    <h2>WORKSHOP (BLUE PRINT)</h2>
+                    <p>Su estrategia debe abarcar la gestión de personas, procesos y cambios, 
+                    incluida la identificación de casos de uso comercial inmediatos, la definición 
+                    de roles, responsabilidades, el establecimiento de medidas para evaluar el éxito y el impacto.</p>
+                    <input type="button" value="Ver mas">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SEGUNDA SECCION DE TARJETAS -->
+        <div class="contenedor_tarjetas">
+
+            <!-- PRIMER TARJETA CAPACITACION-->
+            <div class="card">
+                <div class="cabecera">
+                    <img src="media/capacitacion.png" alt="">
+                    <div class="img_back"></div>
+                </div>
+                <div class="descripcion">
+                    <h2>CAPACITACIÓN</h2>
+                    <p id="sub">Nuestra gama de cursos de Tableau incluye:</p>
+                    <ul>
+                        <li>Tableau Prep Tableau</li>
+                        <li>Desktop Visual Analytics</li>
+                        <li>Tableau Server</li>
+                    </ul>
+                    <p id="sub">Adicionalmente ofrecemos cursos sobre:</p>
+                    <ul>
+                        <li>Business Intelligence</li>
+                        <li>Data Mining.</li>
+                        <li>Big Data</li>
+                    </ul>
+                    <input type="button" value="Ver mas">
+                </div>
+            </div>
+
+            <!-- SEGUNDA TARJETA Venta de SOFTWARE -->
+            <div class="card">
+                <div class="cabecera">
+                    <img src="media/software.png" alt="">
+                    <div class="img_back"></div>
+                </div>
+                <div class="descripcion">
+                    <h2>VENTA DE SOFTWARE</h2>
+                    <p>Nos dedicamos a la venta de licencias de software, podemos 
+                    recomendarle los sistemas que de acuerdo a sus necesidades son más adecuados.<br><br><br><br><br><br></p>
+                    <input type="button" value="Ver mas">
+                </div>
+            </div>
+
+
+            <!-- TERCERA TARJETA WS -->
+            <div class="card">
+                <div class="cabecera">
+                    <img src="media/hardware.png" alt="">
+                    <div class="img_back"></div>
+                </div>
+                <div class="descripcion">
+                    <h2>VENTA DE HARWARE</h2>
+                    <p>Trabajamos con los mejores proveedores de México y tenemos la 
+                    capacidad de cubrir cualquier necesidad que tenga de hardware. 
+                    Redes, computadoras, impresoras y accesorios.<br><br><br><br><br></p>
+                    <input type="button" value="Ver mas">
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- SECCION DE HISTORIAL DE CLIENTES-->
+        <div class="contenido_seccion3"><h3>HISTORIAS DE CLIENTES</h3></div>
+
+        <div class="contenedor_card">
+
+            <div class="card_father">
+                <div class="card_2">
+                    <div class="card_front" style="background-image: url(media/clientes_mondelez.jpeg);">
+                        <div class="bg"></div>
+                        <div class="body_card_front">
+                            <h1>Mondelez Internacional</h1>
+                        </div>
+                    </div>
+                    <div class="card_back">
+                        <div class="body_card_back">
+                            <p>Mondelez Internacional digitaliza la adquisición para integrar más de 160 campos de datos
+                            , 28000 proveeodres y generar millones en ahorro de costos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_father">
+                <div class="card_2">
+                    <div class="card_front" style="background-image: url(media/clientes_grupopetersen.jpg);">
+                        <div class="bg"></div>
+                        <div class="body_card_front">
+                            <h1>Grupo - Petersen</h1>
+                        </div>
+                    </div>
+                    <div class="card_back">
+                        <div class="body_card_back">
+                            <p>Grupo Petersen crea una cultura de datos con Tableau</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_father">
+                <div class="card_2">
+                    <div class="card_front" style="background-image: url(media/clientes_jpmorganchase.jpeg);">
+                        <div class="bg"></div>
+                        <div class="body_card_front">
+                            <h1>JPMorgan Chase & Co.</h1>
+                        </div>
+                    </div>
+                    <div class="card_back">
+                        <div class="body_card_back">
+                            <p>JPMorgan Chase elige Tableau para ofrecer análisis de 
+                            autoservicio y seguir el vertiginoso ritmo de los cambios en el sector</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_father">
+                <div class="card_2">
+                    <div class="card_front" style="background-image: url(media/clientes_redhat.jpeg);">
+                        <div class="bg"></div>
+                        <div class="body_card_front">
+                            <h1>Red Hat</h1>
+                        </div>
+                    </div>
+                    <div class="card_back">
+                        <div class="body_card_back">
+                            <p>Red Hat adopta el Blueprint de Tableau y Tableau Online, y profunzia
+                            en la cultura de datos con más de 4500 empleados en menos de una año</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_father">
+                <div class="card_2">
+                    <div class="card_front" style="background-image: url(media/clientes_verizon.jpg);">
+                        <div class="bg"></div>
+                        <div class="body_card_front">
+                            <h1>Verizon</h1>
+                        </div>
+                    </div>
+                    <div class="card_back">
+                        <div class="body_card_back">
+                            <p>Verizon usa Tableau para reducir las llamadas 
+                            de soporte en un 43% y asi mejorar la experiencia del cliente</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_father">
+                <div class="card_2">
+                    <div class="card_front" style="background-image: url(media/clientes_wholefoods.jpg);">
+                        <div class="bg"></div>
+                        <div class="body_card_front">
+                            <h1>Whole Foods</h1>
+                        </div>
+                    </div>
+                    <div class="card_back">
+                        <div class="body_card_back">
+                            <p>Whole Foods Market democratiza el acceso a los datos en sus 
+                            460 tiendas para 18000 empleos gracias a Tableau</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- MAPA Y CONTACTANOS-->
+        <div class="contenido_seccion4">
+            <h3>CONTÁCTANOS</h3>
+        </div>
+        <div class="contact_in">
+            <div class="contact_map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3763.337600709982!2d-99.171455!3d19.397814!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8908d745e6168858!2sTuring%20-%20Inteligencia%20Artificial!5e0!3m2!1ses-419!2smx!4v1671174735470!5m2!1ses-419!2smx" 
+                width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact_formulario">
+                <input type="button" value="Ponte en contacto con un especialista" id="btn_especialista">
+                <h3>O déjanos tus datos y nosotros nos pondremos en contacto.</h3>
+                <p>Envianos tus datos</p>
+                <form>
+                    <input type="text" placeholder="Nombre" class="contact_form_text" />
+                    <input type="email" placeholder="Correo" class="contact_form_text"/>
+                    <input type="number" placeholder="Número de Telefono" class="contact_form_text"/>
+                    <input type="text" placeholder="Puesto (Opcional)" class="contact_form_text"/>
+                    <input type="text" placeholder="Empresa (Opcional)"  class="contact_form_text"/>
+                    <textarea placeholder="Escribe tu mensaje aquí (Opcional)" class="contact_form_textarea"></textarea>
+                    <input type="submit" placeholder="Enviar" class="contact_form_btn"/>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <script src="js/script.js"></script>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="contenedor_footer">
+            <div class="box_footer">
+                <div class="logo">
+                    <a href="#" >TURING-IA</a>
+                </div>
+                <div class="terminos">
+                    <p>Av. Insurgentes 601 <br>
+                        Col. Nápoles, Benito Juárez<br>
+                        Ciudad de México, México<br><br>
+                        
+                        Teléfono de contacto:<br>
+                        +52 (722) 936-96-65<br>
+                        Correo electrónico:<br>
+                        contacto@turing-ia.com<br></p>
+                </div>
+            </div>
+
+            <div class="box_footer">
+                <h2>Mapa de sitio</h2>
+                <a href="#">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Servicios</a>
+                <a href="#">Tableau</a>
+            </div>
+
+            <div class="box_footer">
+                <h2>Nuestros servicios</h2>
+                <a href="#">Implementación de Proyectos (Business Analyst)</a>
+                <a href="#">Workshop (Blue Print)</a>
+                <a href="#">Capacitación</a>
+                <a href="#">Venta de Software</a>
+                <a href="#">Venta de Hardware</a>
+                <a href="#">Desarrollo de Aplicaciones</a>
+                <a href="#">Balanced Scorecard</a>
+            </div>
+
+            <div class="box_footer">
+                <h2>Siguenos en nuestras redes</h2>
+                <a href="#"><i class="fa-brands fa-linkedin" id="fabicon"></i> Linkedin</a>
+                <a href="#"><i class="fa-brands fa-instagram" id="fabicon"></i> Instagram</a>
+                <a href="#"><i class="fa-brands fa-twitter" id="fabicon"></i> Twitter</a>
+                <a href="#"><i class="fa-brands fa-facebook" id="fabicon"></i> Facebook</a>
+            </div>
+
+        </div>
+        <div class="box_copyright">
+            <hr>
+            <p>© Copyright <b>Turing Inteligencia Artificial.</b> Derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

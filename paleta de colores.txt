@@ -1,0 +1,5 @@
+#211A31 -- azul muy oscuro
+#5E627C -- gris oscuro
+#909CBA -- gris claro 
+#90A8CF -- azul claro para fondo
+#CCC6C7 -- Claro para fondo beige
