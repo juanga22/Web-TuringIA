@@ -13,29 +13,69 @@
 <body>
 
     <!-- CONTENEDOR HEADER-->
+    <div class="container_menu">
     <header>
-        <!-- LOGO / TEXTO TURING IA-->
-        <div class="contenedor_header">
-            <div class="titulo_principal">
-                    <a href="#">TURING-IA</a>
-            </div>
-            <!-- MENU -->
+        <i class="fa-solid fa-bars" id="icon_menu"></i>
             <div class="menu">
                 <nav>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Tableau</a></li>
-                        <li><a href="#">Portal</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contacto</a></li>
+                    <ul class="menu_horizontal">
+                        <li><a href="index.html" class="texto_icon">TURING-IA</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+
+                        <li><a href="servicios.html">Servicios</a>
+                            <ul class="menu_vertical">
+                                <li><a href="#">Business Analyst</a></li>
+                                <li><a href="#">Workshop</a></li>
+                                <li><a href="#">Venta de Software</a></li>
+                                <li><a href="#">Hardware</a></li>
+                                <li><a href="#">Desarrollo de Software</a></li>
+                                <li><a href="#">Balanced Scorecard</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="tableau.html">Tableau</a>
+                            <ul class="menu_vertical">
+                                <li><a href="#">Desktop</a></li>
+                                <li><a href="#">Prep</a></li>
+                                <li><a href="#">Cloud</a></li>
+                                <li><a href="#">Server</a></li>
+                                <li><a href="#">Server Management</a></li>
+                                <li><a href="#">Data Management</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="portal.html">Portal</a></li>
+                        <li><a href="servicios.html">Blog</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
-            <i class="fa-solid fa-bars" id="icon_menu"></i>
         </div>
     </header>
+</div>
+    <!-- BARRA LATERAL -->
+    <div class="container-bar">
+        <input type="checkbox" id="btn-social">
+        <label for="btn-social" class="fa fa-play"></label>
+            <div class="icon-social">
+                <a href="https://www.linkedin.com/company/turing-inteligencia-artificial/?originalSubdomain=mx" class="fa fa-linkedin">
+                    <span id="title">Linkedin</span>
+                </a>
+                <a href="https://www.instagram.com/iaturing/?hl=es" class="fa fa-instagram">
+                    <span id="title">Instagram</span>
+                </a>
+                <a href="https://twitter.com/IaTuring" class="fa fa-twitter">
+                    <span id="title">Twitter</span>
+                </a>
+                <a href="https://www.facebook.com/people/Turing-Inteligencia-Artificial/100072141934213/" class="fa fa-facebook">
+                    <span id="title">Facebook</span>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=527225336638&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n." class="fa fa-whatsapp">
+                    <span id="title">WhatsApp</span>
+                </a>
+            </div>
+        </div>
 
     <!-- MAIN / CONTENIDO-->
     <main>
@@ -94,13 +134,13 @@
         <div class="contenedor_cards_tecnologias">
             <div class="card_3">
                 <div class="cover_card">
-                    <img src="media/tecnologia_tableau.png" alt="">
+                    <img src="media/tecnologia_tableau.png" alt="" id="#tableau">
                 </div>
             </div>
 
             <div class="card_3">
                 <div class="cover_card">
-                    <img src="media/tecnologia_salesforce.png" alt="">
+                    <img src="media/tecnologia_salesforce.png" alt="" id="salesforce">
                 </div>
             </div>
 
@@ -371,13 +411,18 @@
     </main>
     <script src="js/script.js"></script>
 
+    <!-- BOTON PARA IR HACIA ARRIBA -->
+    <div id="button_up">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
 
     <!-- FOOTER -->
     <footer>
         <div class="contenedor_footer">
             <div class="box_footer">
                 <div class="logo">
-                    <a href="#" >TURING-IA</a>
+                    <a href="index.html" >TURING-IA</a>
                 </div>
                 <div class="terminos">
                     <p>Av. Insurgentes 601 <br>
@@ -393,10 +438,10 @@
 
             <div class="box_footer">
                 <h2>Mapa de sitio</h2>
-                <a href="#">Inicio</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Servicios</a>
-                <a href="#">Tableau</a>
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="tableau.html">Tableau</a>
             </div>
 
             <div class="box_footer">
@@ -412,8 +457,8 @@
 
             <div class="box_footer">
                 <h2>Siguenos en nuestras redes</h2>
-                <a href="#"><i class="fa-brands fa-linkedin" id="fabicon"></i> Linkedin</a>
-                <a href="#"><i class="fa-brands fa-instagram" id="fabicon"></i> Instagram</a>
+                <a href="https://www.linkedin.com/company/turing-inteligencia-artificial/?originalSubdomain=mx"><i class="fa-brands fa-linkedin" id="fabicon"></i> Linkedin</a>
+                <a href="https://www.instagram.com/iaturing/?hl=es"><i class="fa-brands fa-instagram" id="fabicon"></i> Instagram</a>
                 <a href="#"><i class="fa-brands fa-twitter" id="fabicon"></i> Twitter</a>
                 <a href="#"><i class="fa-brands fa-facebook" id="fabicon"></i> Facebook</a>
             </div>
